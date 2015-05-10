@@ -8,7 +8,8 @@ provisioner:
 platforms:
   - name: centos
     driver_config:
-      image: centos:centos6.6
+      image: amaltson/docker-redis-req-centos
+      require_chef_omnibus: false
 
 suites:
   - name: default
