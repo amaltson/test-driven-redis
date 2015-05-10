@@ -10,6 +10,10 @@ platforms:
     driver_config:
       image: amaltson/docker-redis-req-centos
       require_chef_omnibus: false
+  - name: ubuntu
+    driver_config:
+      image: amaltson/docker-redis-req-ubuntu
+      require_chef_omnibus: false
 
 suites:
   - name: default
