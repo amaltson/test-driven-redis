@@ -27,6 +27,7 @@ platforms:
       run_command: /sbin/init
       privileged: true
       privision_command:
+        - apt-get install -y iproute2
         - systemctl enable ssh.service
 
 suites:
