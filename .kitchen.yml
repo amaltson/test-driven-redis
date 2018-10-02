@@ -22,6 +22,12 @@ platforms:
         - sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
         - yum install -y net-tools
         - systemctl enable sshd.service
+  - name: ubuntu-18.04
+    driver_config:
+      run_command: /sbin/init
+      privileged: true
+      privision_command:
+        - systemctl enable ssh.service
 
 suites:
   - name: default
