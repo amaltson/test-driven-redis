@@ -20,3 +20,11 @@ describe service('redis@6379') do
   it { should be_enabled }
   it { should be_running }
 end
+
+describe command('/usr/local/bin/redis-cli set web_unleashed "is awesome"') do
+  its(:exit_status) { should eq 0 }
+end
+
+describe command('/usr/local/bin/redis-cli get web_unleashed') do
+  its(:stdout) { should match('is awesome') }
+end
