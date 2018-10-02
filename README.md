@@ -1,8 +1,8 @@
 # Test Driven Redis
 
 This repository follows the Test Drive Infrastructure approach discussed during
-the Full Stack Toronto talk **Test Driven Infrastructure** and DevOpsDays
-Toronto 2015 talk **Chef, Test Kitchen, ServerSpec, Docker, CI... Oh My!**.
+the Web Unleashed 2018 **Test Driven Infrastructure** talk. It's also been given
+in 2015 at Full Stack Toronto and DevOps Days Toronto.
 
 Follow the [commit
 stream](/amaltson/test-driven-redis/commits/master) to see the
