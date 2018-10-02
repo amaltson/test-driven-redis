@@ -20,6 +20,7 @@ platforms:
       privileged: true
       privision_command:
         - sed -i 's/UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
+        - yum install -y net-tools
         - systemctl enable sshd.service
 
 suites:
