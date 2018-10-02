@@ -7,7 +7,7 @@ in 2015 at Full Stack Toronto and DevOps Days Toronto.
 Follow the [commit
 stream](/amaltson/test-driven-redis/commits/master) to see the
 Test Driven Infrastructure approach. We start with writing a failing
-[ServerSpec](http://serverspec.org/), then writing the [Chef
+[InSpec](https://www.inspec.io/), then writing the [Chef
 recipe](http://learn.chef.io/) to make that tests pass. This example makes heavy
 use of the [redisio supermarket
 cookbook](https://supermarket.chef.io/cookbooks/redisio).
@@ -22,10 +22,10 @@ setup the following:
   environment](https://github.com/chef/chef-dk#using-chefdk-as-your-primary-development-environment).
   - `gem install kitchen-docker`
 
-  ### Usage
+### Usage
 
-  With the prerequisites out of the way, you can start running the Test Kitchen
-  tests with a `kitchen verify`. If you make changes to the Chef cookbook,
-  you'll
-  need to `kitchen converge` to apply the changes the Docker node. If you'd like
-  to poke around the server, you can `kitchen login`.
+With the prerequisites out of the way, you can start running the Test Kitchen
+tests with a `kitchen verify`. If you make changes to the Chef cookbook,
+you'll
+need to `kitchen converge` to apply the changes the Docker node. If you'd like
+to poke around the server, you can `kitchen login`.
