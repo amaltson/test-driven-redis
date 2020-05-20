@@ -1,5 +1,5 @@
 {
-  "revision_id": "05001c57ac4df46a192d98b01aef9fc784eea475c4ea848224e72634c567ac47",
+  "revision_id": "c112a5fc78ab54459f52203833f8f2b5e2e3507ed6e0d13202a8b2f0fcc77343",
   "name": "test-driven-redis",
   "run_list": [
     "recipe[test-driven-redis::default]"
@@ -32,14 +32,14 @@
     },
     "test-driven-redis": {
       "version": "0.1.0",
-      "identifier": "a2406962f92a0b82e686f40c8eaf33d88d44e66a",
-      "dotted_decimal_identifier": "45669767603366411.36845214266855087.57005176055402",
+      "identifier": "f244085227e90812ca9582ecf7f138b639b5a52b",
+      "dotted_decimal_identifier": "68191746892753160.5289293076297713.62355303408939",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/amaltson/test-driven-redis.git",
-        "revision": "36e0c4601c25645bd95ff6518b5abcf71ba065e0",
+        "revision": "da99fe447e253420f2021fcfa4bf662549f5a9d4",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -102,7 +102,10 @@
 
       ],
       "test-driven-redis (0.1.0)": [
-
+        [
+          "redisio",
+          ">= 0.0.0"
+        ]
       ],
       "ulimit (1.1.0)": [
 
