@@ -1,0 +1,112 @@
+{
+  "revision_id": "05001c57ac4df46a192d98b01aef9fc784eea475c4ea848224e72634c567ac47",
+  "name": "test-driven-redis",
+  "run_list": [
+    "recipe[test-driven-redis::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "redisio": {
+      "version": "4.1.0",
+      "identifier": "ec4f7e2c4e5af83f93722d5baa6025f5dfdf3f48",
+      "dotted_decimal_identifier": "66515497831521016.17895042129308256.41737953165128",
+      "cache_key": "redisio-4.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/redisio/versions/4.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/redisio/versions/4.1.0/download",
+        "version": "4.1.0"
+      }
+    },
+    "selinux_policy": {
+      "version": "2.4.1",
+      "identifier": "7598d7dec296882f52a850eea75dd701e5585459",
+      "dotted_decimal_identifier": "33100625197831816.13320206771201885.236403142710361",
+      "cache_key": "selinux_policy-2.4.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/selinux_policy/versions/2.4.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/selinux_policy/versions/2.4.1/download",
+        "version": "2.4.1"
+      }
+    },
+    "test-driven-redis": {
+      "version": "0.1.0",
+      "identifier": "a2406962f92a0b82e686f40c8eaf33d88d44e66a",
+      "dotted_decimal_identifier": "45669767603366411.36845214266855087.57005176055402",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/amaltson/test-driven-redis.git",
+        "revision": "36e0c4601c25645bd95ff6518b5abcf71ba065e0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "ulimit": {
+      "version": "1.1.0",
+      "identifier": "662b5d8466ee67165c34e2ea9b0b9ef8b5decf6f",
+      "dotted_decimal_identifier": "28758128277778023.6293831702715147.174791040356207",
+      "cache_key": "ulimit-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.1.0/download",
+        "version": "1.1.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "redisio",
+        "= 4.1.0"
+      ],
+      [
+        "selinux_policy",
+        "= 2.4.1"
+      ],
+      [
+        "test-driven-redis",
+        ">= 0.0.0"
+      ],
+      [
+        "ulimit",
+        "= 1.1.0"
+      ]
+    ],
+    "dependencies": {
+      "redisio (4.1.0)": [
+        [
+          "ulimit",
+          ">= 0.1.2"
+        ],
+        [
+          "selinux_policy",
+          ">= 2.2.0"
+        ]
+      ],
+      "selinux_policy (2.4.1)": [
+
+      ],
+      "test-driven-redis (0.1.0)": [
+
+      ],
+      "ulimit (1.1.0)": [
+
+      ]
+    }
+  }
+}

@@ -14,3 +14,5 @@ run_list 'test-driven-redis::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'test-driven-redis', path: '.'
+
+cookbook 'redisio', '~> 4'
