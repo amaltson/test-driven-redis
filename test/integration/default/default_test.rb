@@ -10,3 +10,12 @@ end
 describe file('/var/lib/redis') do
   it { should be_directory }
 end
+
+describe port(6379) do
+  it { should be_listening }
+end
+
+describe service('redis@6379') do
+  it { should be_enabled }
+  it { should be_running }
+end
