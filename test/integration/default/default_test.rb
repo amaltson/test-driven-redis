@@ -19,3 +19,11 @@ describe service('redis@6379') do
   it { should be_enabled }
   it { should be_running }
 end
+
+describe command('redis-cli set chef_conf "is awesome"') do
+  its(:exit_status) { should eq 0 }
+end
+
+describe command('redis-cli get chef_conf') do
+  its(:stdout) { should match('is awesome') }
+end
